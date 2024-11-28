@@ -5,7 +5,10 @@ edition = "2021"
 
 [dependencies]
 axum = "0.7.9"
+hex = "0.4.3"
+hmac = "0.12.1"
 serde_json = "1.0.133"
+sha2 = "0.10.8"
 tokio = { version = "1.41.1", features = ["rt-multi-thread"] }
 tracing = "0.1.40"
 tracing-subscriber = "0.3.18"
