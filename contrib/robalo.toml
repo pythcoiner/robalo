@@ -1,0 +1,6 @@
+ip = "0.0.0.0"
+port = 3000
+sentry_secret = <sentry_secret>
+mattermost_token = <mm_token>
+mattermost_channel_id = <mm_channel>
+mattermost_base_url = "https://mm.revault.dev"

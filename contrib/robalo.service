@@ -1,0 +1,18 @@
+[Unit]
+Description=Robalo
+After=network.target
+
+[Service]
+User=<user>
+Group=<user>
+ExecStart=<binary_path> <config_path>
+Restart=always
+RestartSec=3s
+Environment=RUST_LOG=debug
+
+# let service bind to port < 1024 w/o root privileges
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+
+[Install]
+WantedBy=multi-user.target
